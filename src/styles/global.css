@@ -56,10 +56,6 @@ nav {
     list-style: none;
 }
 
-.nav-links li {
-    margin-left: 2rem;
-}
-
 .nav-links a {
     color: var(--light-text);
     text-decoration: none;
