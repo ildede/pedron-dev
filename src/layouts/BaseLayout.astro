@@ -1,8 +1,8 @@
 ---
 import "../styles/reset.css"
-import "../styles/global.css"
-import Footer from "../components/Footer.astro";
+import "@picocss/pico"
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 <!DOCTYPE html>
 <html lang="it">
@@ -10,6 +10,19 @@ import Header from "../components/Header.astro";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davide Pedron - Portfolio</title>
+    <style>
+        html {
+            background: linear-gradient(to right, white, #1a3e75, #1a3e75, white)
+        }
+
+        :root, :host {
+            --pico-nav-element-spacing-vertical: .5rem;
+            //--pico-nav-element-spacing-horizontal: .5rem;
+            //--pico-nav-link-spacing-vertical: 0rem;
+            //--pico-nav-link-spacing-horizontal: .5rem;
+            --pico-block-spacing-vertical: 0rem;
+        }
+    </style>
 </head>
 <body>
 

@@ -1,0 +1,135 @@
+<section id="experience" class="container-fluid">
+    <header class="container">
+        <img src="public/me.jpg" alt="Davide Pedron"/>
+        <section>
+            <h2>Software Engineer & Game Developer</h2>
+            <p>
+                Backend specialist by profession, <strong>game developer by passion</strong>.<br>
+                I develop software and good mood, turning complex challenges into elegant solutions both in enterprise
+                systems
+                and creative game worlds.
+            </p>
+        </section>
+    </header>
+    <main class="container">
+        <p>
+            I like to try a bit of everything. Here's the obligatory buzzword bingo card: I've played with all of these,
+            with varying levels of success (and sanity).
+        </p>
+        <ul>
+            <li><a>Rust</a></li>
+            <li><a>TypeScript</a></li>
+            <li><a>Java</a></li>
+            <li><a>Python</a></li>
+            <li><a>AWS</a></li>
+            <li><a>Cloudflare</a></li>
+            <li><a>Railway</a></li>
+            <li><a>Git</a></li>
+            <li><a>GitHub</a></li>
+            <li><a>Bitbucket</a></li>
+            <li><a>MongoDB</a></li>
+            <li><a>PosgtreSQL</a></li>
+            <li><a>MySQL</a></li>
+            <li><a>Oracle</a></li>
+            <li><a>Taskfile</a></li>
+            <li><a>Chef</a></li>
+            <li><a>Jenkins</a></li>
+            <li><a>SonarQube</a></li>
+            <li><a>Terraform</a></li>
+            <li><a>Liferay</a></li>
+            <li><a>Spring</a></li>
+            <li><a>Spring Boot</a></li>
+            <li><a>JavaFX</a></li>
+            <li><a>Mulesoft</a></li>
+            <li><a>API-Led</a></li>
+            <li><a>TDD</a></li>
+            <li><a>DDD</a></li>
+            <li><a>Datadog</a></li>
+            <li><a>Hex</a></li>
+            <li><a>Phaser</a></li>
+            <li><a>Babylon</a></li>
+            <li><a>A-Frame</a></li>
+            <li><a>Godot</a></li>
+            <li><a>Unity</a></li>
+            <li><a>GameMaker</a></li>
+            <li><a>Tiled</a></li>
+            <li><a>Bevy</a></li>
+        </ul>
+    </main>
+
+</section>
+
+<style>
+    * {
+        color: var(--pico-code-background-color)
+    }
+
+    header {
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        header {
+            text-align: left;
+            grid-template-columns: 3fr 4fr;
+            grid-gap: 2rem;
+        }
+    }
+
+    header section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    img {
+        border-radius: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    strong {
+        color: #ffd166;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        li {
+            list-style: none;
+            margin: .6rem .3rem;
+        }
+
+        a {
+            padding: .5rem 1rem;
+            text-decoration: none;
+            border: 2px solid;
+            border-color: var(--pico-code-background-color);
+            border-radius: 1rem;
+            color: var(--pico-code-background-color);
+
+            background-color: rgba(26, 62, 117, 0.5);
+
+            &:hover {
+                color: #1a3e75;
+                border-color: #1a3e75;
+                background-color: var(--pico-code-background-color);
+            }
+        }
+
+
+    }
+</style>

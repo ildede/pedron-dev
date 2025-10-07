@@ -1,219 +1,64 @@
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-badge">Software Engineer & Game Developer</div>
-        <h1>Davide Pedron</h1>
-        <p class="hero-tagline">Transforming code into immersive experiences</p>
-        <p class="hero-description">
-            Backend specialist by profession, <span class="hero-highlight">game developer by passion</span>.<br>
-            I develop software and good mood, turning complex challenges into elegant solutions
-            both in enterprise systems and creative game worlds.
-        </p>
-        <div class="cta-buttons">
-            <a href="#contact" class="cta-button cta-primary">Get In Touch</a>
-            <a href="CV_davide_pedron.pdf" target="_blank" class="cta-button cta-secondary">See CV</a>
-            <a href="/portfolio" class="cta-button cta-primary">Portfolio</a>
-        </div>
-        <p class="language-pills">
-            I like to try a bit of everything. Here's the obligatory buzzword bingo card: I've played with all of these, with varying levels of success (and sanity).
-        </p>
-        <div class="language-pills">
-            <span class="language-pill">Rust</span>
-            <span class="language-pill">TypeScript</span>
-            <span class="language-pill">Java</span>
-            <span class="language-pill">Python</span>
-            <span class="language-pill">AWS</span>
-            <span class="language-pill">Cloudflare</span>
-            <span class="language-pill">Railway</span>
-            <span class="language-pill">Git</span>
-            <span class="language-pill">GitHub</span>
-            <span class="language-pill">Bitbucket</span>
-            <span class="language-pill">MongoDB</span>
-            <span class="language-pill">PosgtreSQL</span>
-            <span class="language-pill">MySQL</span>
-            <span class="language-pill">Oracle</span>
-            <span class="language-pill">Taskfile</span>
-            <span class="language-pill">Chef</span>
-            <span class="language-pill">Jenkins</span>
-            <span class="language-pill">SonarQube</span>
-            <span class="language-pill">Terraform</span>
-            <span class="language-pill">Liferay</span>
-            <span class="language-pill">Spring</span>
-            <span class="language-pill">Spring Boot</span>
-            <span class="language-pill">JavaFX</span>
-            <span class="language-pill">Mulesoft</span>
-            <span class="language-pill">API-Led</span>
-            <span class="language-pill">TDD</span>
-            <span class="language-pill">DDD</span>
-            <span class="language-pill">Datadog</span>
-            <span class="language-pill">Hex</span>
-            <span class="language-pill">Phaser</span>
-            <span class="language-pill">Babylon</span>
-            <span class="language-pill">A-Frame</span>
-            <span class="language-pill">Godot</span>
-            <span class="language-pill">Unity</span>
-            <span class="language-pill">GameMaker</span>
-            <span class="language-pill">Tiled</span>
-            <span class="language-pill">Bevy</span>
-        </div>
+<section id="hero" class="container-fluid">
+    <h1>Davide Pedron</h1>
+    <p>Transforming code into immersive experiences</p>
+    <div>
+        <a href="#contact" class="primary">Get In Touch</a>
+        <a href="CV_davide_pedron.pdf" target="_blank" class="contrast">See CV</a>
+        <a href="/portfolio" class="primary">Portfolio</a>
     </div>
-
 </section>
 
 <style>
-    .hero {
-        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-        color: var(--light-text);
-        padding: 6rem 2rem;
-        text-align: center;
-        min-height: 100vh;
+    #hero {
+        background-image: url("public/banner.jpeg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
+        align-content: center;
         justify-content: center;
         align-items: center;
-        position: relative;
-        overflow: hidden;
+        text-align: center;
+        padding: 8rem 1rem 1rem 1rem;
     }
 
-    .hero-content {
-        max-width: 900px;
-        z-index: 2;
+    h1, p, a {
+        color:  var(--pico-code-background-color);
     }
 
-    .hero-badge {
-        display: inline-block;
-        background-color: var(--secondary-blue);
-        color: white;
-        padding: 0.5rem 1.5rem;
-        border-radius: 30px;
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
-        line-height: 1.2;
-    }
-
-    .hero-tagline {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
-        color: rgba(255, 255, 255, 0.9);
-    }
-
-    .hero-description {
-        font-size: 1.2rem;
-        max-width: 700px;
-        margin: 0 auto 3rem;
-        color: rgba(255, 255, 255, 0.85);
-    }
-
-    .hero-highlight {
-        color: #ffd166;
-        font-weight: bold;
-    }
-
-    .cta-buttons {
+    div {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         justify-content: center;
         flex-wrap: wrap;
-    }
 
-    .cta-button {
-        display: inline-block;
-        padding: 1rem 2rem;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: all 0.3s;
-    }
+        a {
+            padding: .5rem 1rem;
+            text-decoration: none;
+            border: 2px solid;
+            border-color: var(--pico-code-background-color);
+            border-radius: 1rem;
+            color: var(--pico-code-background-color);
 
-    .cta-primary {
-        background-color: var(--accent-red);
-        color: white;
-    }
+            &.primary {
+                background-color: #e63946;
+                &:hover {
+                    color: #e63946;
+                    border-color: #e63946;
+                    background-color: var(--pico-code-background-color);
+                }
+            }
 
-    .cta-primary:hover {
-        background-color: #c1121f;
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .cta-secondary {
-        background-color: transparent;
-        color: white;
-        border: 2px solid white;
-    }
-
-    .cta-secondary:hover {
-        background-color: white;
-        color: var(--primary-blue);
-        transform: translateY(-3px);
-    }
-
-    .language-pills {
-        display: flex;
-        gap: 0.5rem;
-        justify-content: center;
-        margin-top: 2rem;
-        flex-wrap: wrap;
-    }
-
-    .language-pill {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        font-size: 0.9rem;
-    }
-
-    /* Animated background elements */
-    .hero::before {
-        content: '';
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        top: -150px;
-        right: -150px;
-    }
-
-    .hero::after {
-        content: '';
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        background: rgba(230, 57, 70, 0.2);
-        border-radius: 50%;
-        bottom: -100px;
-        left: -100px;
-    }
-
-    /* Responsive design */
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        .hero-tagline {
-            font-size: 1.4rem;
-        }
-
-        .hero-description {
-            font-size: 1.1rem;
-        }
-
-        .cta-buttons {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .cta-button {
-            width: 100%;
-            max-width: 300px;
-            text-align: center;
+            &.contrast {
+                background-color: #1a3e75;
+                &:hover {
+                    color: #1a3e75;
+                    border-color: #1a3e75;
+                    background-color: var(--pico-code-background-color);
+                }
+            }
         }
     }
 </style>
