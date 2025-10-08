@@ -17,7 +17,6 @@ const { imgSrc, imgAlt, title, description, sourceCode, playHere } = Astro.props
 
 
 <style>
-    /* Progetti */
     .project-card {
         background-color: white;
         border-radius: 8px;
@@ -48,15 +47,18 @@ const { imgSrc, imgAlt, title, description, sourceCode, playHere } = Astro.props
 
     .project-info {
         padding: 1.5rem;
+        * {
+            color: var(--pdr-lighter-blue);
+        }
     }
 
     .project-title {
-        color: var(--primary-blue);
+        color: var(--pdr-primary-blue);
         margin-bottom: 0.5rem;
     }
 
     .project-links a {
-        color: var(--accent-red);
+        color: var(--pdr-accent-red);
         text-decoration: none;
         margin-right: 1rem;
         font-weight: bold;
@@ -64,6 +66,6 @@ const { imgSrc, imgAlt, title, description, sourceCode, playHere } = Astro.props
     }
 
     .project-links a:hover {
-        color: #c1121f;
+        color: rgba(0, 0, 0, 0.1);
     }
 </style>

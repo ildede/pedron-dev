@@ -25,7 +25,7 @@
     }
 
     h1, p, a {
-        color:  var(--pico-code-background-color);
+        color:  var(--pdr-primary-text);
     }
 
     div {
@@ -38,25 +38,25 @@
             padding: .5rem 1rem;
             text-decoration: none;
             border: 2px solid;
-            border-color: var(--pico-code-background-color);
+            border-color: var(--pdr-primary-text);
             border-radius: 1rem;
-            color: var(--pico-code-background-color);
+            color: var(--pdr-primary-text);
 
             &.primary {
-                background-color: #e63946;
+                background-color: var(--pdr-accent-red);
                 &:hover {
-                    color: #e63946;
-                    border-color: #e63946;
-                    background-color: var(--pico-code-background-color);
+                    color: var(--pdr-accent-red);
+                    border-color: var(--pdr-accent-red);
+                    background-color: var(--pdr-primary-text);
                 }
             }
 
             &.contrast {
-                background-color: #1a3e75;
+                background-color: var(--pdr-primary-blue);
                 &:hover {
-                    color: #1a3e75;
-                    border-color: #1a3e75;
-                    background-color: var(--pico-code-background-color);
+                    color: var(--pdr-primary-blue);
+                    border-color: var(--pdr-primary-blue);
+                    background-color: var(--pdr-primary-text);
                 }
             }
         }
